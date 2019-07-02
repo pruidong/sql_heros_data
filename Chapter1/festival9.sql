@@ -55,5 +55,5 @@ SELECT team_name, (SELECT count(*) FROM player WHERE player.team_id = team.team_
 
 -- ** 
 
-
+select player_id,player_name,team_id from player where player_id in (select player_id from player_score where SCORE>20);
 
